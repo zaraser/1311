@@ -1,0 +1,25 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "dist/server.js",
+    "scripts": {
+      "dev": "ts-node src/server.ts",
+      "build": "tsc"
+    },
+    "dependencies": {
+      "better-sqlite3": "^9.4.4",
+      "fastify": "^4.26.2",
+      "@fastify/cors": "^8.2.0",
+      "@fastify/static": "^6.10.0",
+      "express": "^4.19.2",
+      "socket.io": "^4.7.5",
+      "socket.io-client": "^4.7.5",
+      "cors": "^2.8.5"
+    },
+    "devDependencies": {
+      "typescript": "^5.4.0",
+      "ts-node": "^10.9.2"
+    }
+  }
+  

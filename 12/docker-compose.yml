@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8443:8443"
+    environment:
+      - PORT=8443
+      - NODE_ENV=production
+      - SSL_KEY_PATH=/app/ssl/key.pem
+      - SSL_CERT_PATH=/app/ssl/cert.pem
+    volumes:
+      - ./backend/data:/app/data
+      - ./backend/ssl:/app/ssl:ro
